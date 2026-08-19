@@ -1,0 +1,60 @@
+site_name: COMP1 | Compiladores
+site_description: Documentação do projeto de Compiladores 1 da UnB
+site_author: Sergio A. A. Freitas
+repo_name: sergioaafreitas/COMP1
+repo_url: https://github.com/sergioaafreitas/COMP1
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: pt-BR
+  favicon: assets/as_vert_cor.jpg
+  font:
+    text: Manrope
+    code: JetBrains Mono
+  logo: assets/as_vert_cor.jpg
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Usar tema escuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Usar tema claro
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - navigation.sections
+    - navigation.expand
+    - search.suggest
+    - search.highlight
+
+nav:
+  - Início: index.md
+  - Projeto:
+      - Arquitetura: arquitetura.md
+      - Como compilar: como-compilar.md
+      - Gramática e tokens: gramática.md
+  - Referência:
+      - Estrutura de arquivos: referencia/estrutura.md
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.highlight
+  - pymdownx.tabbed
+  - pymdownx.superfences
+  - pymdownx.tasklist
+  - toc:
+      permalink: true
+
+plugins:
+  - search
